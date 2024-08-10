@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="max-w-3xl mx-auto scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio Website</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="dist/img/Slime Hejo Favicon.svg" type="image/x-icon">
+</head>
+
+<body class="font-poppins dark:bg-black">
+    <div class="container flex flex-col gap-4 p-4 mx-auto">
+        <!-- title -->
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <h1 id="welcome" class="font-bold text-8xl dark:text-white">Hi</h1>
+                <h1 class="text-4xl">👋</h1>
+            </div>
+            <!-- dark mode toggle -->
+            <button id="darkModeToggle"
+                class="px-4 py-2 text-sm text-white bg-black border border-black rounded-lg hover:bg-white hover:text-black hover:border hover:border-black hover:transition-all dark:text-black dark:bg-white dark:hover:bg-black dark:hover:text-white dark:hover:border dark:hover:border-white dark:border dark:border-white">DRK</button>
+        </div>
+        <!-- profile -->
+        <div class="flex flex-col flex-wrap gap-4 sm:flex-row lg:flex-row lg:flex-wrap">
+            <!-- profile card -->
+            <div id="profile"
+                class="bg-black border border-black rounded-lg p-10 flex flex-col items-center justify-center sm:flex-[1_0_calc(40%-16px)] dark:bg-white dark:border dark:border-white">
+                <div class="overflow-hidden rounded-full">
+                    <img class="rounded-full aspect-square w-28 hover:scale-[1.75] hover:transition-all hover:translate-y-[2rem]"
+                        src="dist/img/FOTO JUNDI.jpg" alt="foto-profil">
+                </div>
+                <p class="pt-4 text-2xl font-semibold text-center text-white dark:text-black">Ismail Jundi</p>
+                <p class="text-sm font-light text-center text-white dark:text-black">UI Designer | Front-End Developer
+                </p>
+                <div class="flex gap-4 pt-4">
+                    <a class="w-5 h-5 hover:motion-safe:animate-bounce dark:invert" href="https://github.com/uijunn"
+                        target="_blank">
+                        <img src="dist/img/github_icon.svg" alt="github_icon">
+                    </a>
+                    <a class="w-5 h-5 hover:motion-safe:animate-bounce dark:invert"
+                        href="https://instagram.com/jundismail" target="_blank">
+                        <img src="dist/img/instagram_icon.svg" alt="instagram_icon">
+                    </a>
+                    <a class="w-5 h-5 hover:motion-safe:animate-bounce dark:invert" href="https://twitter.com/ui_junn"
+                        target="_blank">
+                        <img src="dist/img/x_icon.svg" alt="x_icon">
+                    </a>
+                </div>
+            </div>
+            <!-- description -->
+            <div id="desc"
+                class="border border-black rounded-lg p-8 flex flex-col gap-4 items-center justify-center sm:flex-[1_0_calc(60%-16px)] dark:border-white">
+                <p class="text-lg text-center dark:text-white">I am currently a member of</p>
+                <img class="invert dark:invert-0" src="dist/img/nulisproduktiv-logo.svg" alt="nulisproduktiv-logo">
+                <a class="px-4 py-2 text-sm text-center text-white bg-black border rounded-lg hover:bg-white hover:border-black hover:text-black hover:transition-all dark:text-black dark:bg-white dark:hover:bg-black dark:hover:border-white dark:hover:text-white"
+                    href="https://instagram.com/nulisproduktiv" target="_blank">Visit
+                    #nulisproduktiv &nearrow;</a>
+            </div>
+            <!-- about me -->
+            <div id="aboutMe"
+                class="border border-black rounded-lg p-8 flex flex-col gap-4 items-center justify-center sm:flex-[1_0_calc(50%-16px)] dark:border-white">
+                <p class="text-2xl font-bold dark:text-white text-balance">About Me</p>
+                <p class="text-base text-center dark:text-white">As a passionate UI Designer and Front-End Developer, I
+                    am driven to create innovative and engaging digital experiences. I have a proven ability to
+                    translate design
+                    concepts into
+                    functional, responsive web applications. I am eager to contribute my skills to a dynamic team and
+                    work on challenging
+                    projects.</p>
+                <a class="px-6 py-3 text-sm text-center text-white bg-black border rounded-lg hover:bg-white hover:border-black hover:text-black hover:transition-all dark:text-black dark:bg-white dark:hover:bg-black dark:hover:border-white dark:hover:text-white"
+                    href="https://drive.google.com/file/d/1kVnp-COCbdNL12nr72zTP2CdizfcMiwu/view?usp=sharing"
+                    target="_blank">Download CV &nearr;</a>
+            </div>
+        </div>
+        <!-- projects -->
+        <h2 class="mt-4 text-2xl font-bold dark:text-white">My projects</h2>
+        <div id="projects" class="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <!-- GPBUS -->
+            <div
+                class="border border-black rounded-lg p-8 flex flex-col justify-between sm:flex-[1_0_calc(50%-16px)] lg:flex-[1_0_calc(33.3%-16px)] dark:border-white">
+                <div class="flex flex-col pb-4">
+                    <p class="text-xl font-bold dark:text-white">GPBUS</p>
+                    <p class="text-base font-light text-slate-500 dark:text-slate-400">Bus Location and Passenger
+                        Monitoring System
+                    </p>
+                </div>
+                <div class="flex">
+                    <a class="w-full px-4 py-2 text-sm text-center text-white bg-black border rounded-lg hover:bg-white hover:border-black hover:text-black hover:transition-all dark:text-black dark:bg-white dark:hover:bg-black dark:hover:border-white dark:hover:text-white"
+                        href="https://gpbusbandung.web.app/" target="_blank">Visit
+                        GPBUS &nearrow;</a>
+                </div>
+            </div>
+            <!-- NOMADS -->
+            <div
+                class="border border-black rounded-lg p-8 flex flex-col justify-between sm:flex-[1_0_calc(50%-16px)] lg:flex-[1_0_calc(33.3%-16px)] dark:border-white">
+                <div class="flex flex-col pb-4">
+                    <p class="text-xl font-bold dark:text-white">NOMADS</p>
+                    <p class="text-base font-light text-slate-500 dark:text-slate-400">Travel Agent Website UI Design
+                    </p>
+                </div>
+                <div class="flex">
+                    <a class="w-full px-4 py-2 text-sm text-center text-white bg-black border rounded-lg hover:bg-white hover:border-black hover:text-black hover:transition-all dark:text-black dark:bg-white dark:hover:bg-black dark:hover:border-white dark:hover:text-white"
+                        href="https://www.figma.com/proto/zJgsY8HW1xleuA7ci6RqoK/BWA-Fullstack-Web-Dev?type=design&node-id=1-2&t=L2G1Nrnl56Anv4wN-8&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A2&hide-ui=1"
+                        target="_blank">Visit
+                        NOMADS &nearrow;</a>
+                </div>
+            </div>
+            <!-- CRYPTOKU -->
+            <div
+                class="border border-black rounded-lg p-8 flex flex-col justify-between sm:flex-[1_0_calc(50%-16px)] lg:flex-[1_0_calc(33.3%-16px)] dark:border-white">
+                <div class="flex flex-col pb-4">
+                    <p class="text-xl font-bold dark:text-white">CRYPTOKU</p>
+                    <p class="text-base font-light text-slate-500 dark:text-slate-400">Cryptocurrency Website UI Design
+                    </p>
+                </div>
+                <div class="flex">
+                    <a class="w-full px-4 py-2 text-sm text-center text-white bg-black border rounded-lg hover:bg-white hover:border-black hover:text-black hover:transition-all dark:text-black dark:bg-white dark:hover:bg-black dark:hover:border-white dark:hover:text-white"
+                        href="https://www.figma.com/proto/59KLVGpAMhAG60liTf1nah/UI-UX-Dibimbing-Course?node-id=2-2&starting-point-node-id=2%3A2&hide-ui=1&t=vIwCowOjqEkxQh3r-8"
+                        target="_blank">Visit
+                        CRYPTOKU &nearrow;</a>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->
+        <h2 class="mt-4 text-2xl font-bold dark:text-white">Contact Me</h2>
+        <div id="contact" class="flex flex-col">
+            <!-- Form -->
+            <form id="contactForm" action="https://formspree.io/f/xjkbrewn" method="POST" class="flex flex-col gap-4">
+                <!-- input name -->
+                <div class="flex flex-col gap-1 input-data">
+                    <label class="text-lg font-semibold dark:text-white" for="fullName">Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Insert Name" required
+                        class="w-full px-4 py-2 text-base border border-black rounded-lg dark:bg-black dark:border-white dark:text-white placeholder:text-slate-500">
+                </div>
+                <!-- input email -->
+                <div class="flex flex-col gap-1 input-data">
+                    <label class="text-lg font-semibold dark:text-white" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Insert Email" required
+                        class="w-full px-4 py-2 text-base border border-black rounded-lg dark:bg-black dark:border-white dark:text-white placeholder:text-slate-500">
+                </div>
+                <!-- input subject -->
+                <div class="flex flex-col gap-1 input-data">
+                    <label class="text-lg font-semibold dark:text-white" for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Insert Subject" required
+                        class="w-full px-4 py-2 text-base border border-black rounded-lg dark:bg-black dark:border-white dark:text-white placeholder:text-slate-500">
+                </div>
+                <!-- input message -->
+                <div class="flex flex-col gap-1 input-data">
+                    <label class="text-lg font-semibold dark:text-white" for="message">Message</label>
+                    <textarea type="text" id="message" name="message" cols="30" rows="5" placeholder="Insert Message"
+                        class="w-full px-4 py-2 text-base border border-black rounded-lg resize-none dark:bg-black dark:border-white dark:text-white placeholder:text-slate-500"></textarea>
+                </div>
+                <!-- submit button -->
+                <button type="submit"
+                    class="px-4 py-2 text-sm text-center text-white bg-black border rounded-lg hover:bg-white hover:border-black hover:text-black hover:transition-all dark:text-black dark:bg-white dark:hover:bg-black dark:hover:border-white dark:hover:text-white">Send</button>
+                <div
+                    class="w-6 h-6 mx-auto mt-4 ease-linear border-4 border-t-4 border-black rounded-full dark:border-white border-t-white loader dark:border-t-black">
+                </div>
+            </form>
+        </div>
+        <!-- spotify -->
+        <div id="spotify" class="flex flex-col w-full gap-4 mt-4 md:flex-row md:flex-wrap">
+            <iframe class="w-full rounded-lg md:flex-row md:flex-[1_0_calc(50%-16px)]"
+                src="https://open.spotify.com/embed/playlist/7yfz7wFac1QlP18X2gnsZI?utm_source=generator"
+                alt="spotify-music-1" width="100%" height="352" loading="lazy"></iframe>
+            <iframe class="w-full rounded-lg md:flex-row md:flex-[1_0_calc(50%-16px)]"
+                src="https://open.spotify.com/embed/playlist/4boGLT97uaCQ11VGCAT2Jq?utm_source=generator"
+                alt="spotify-music-2" width="100%" height="352" loading="lazy"></iframe>
+        </div>
+        <!-- footer -->
+        <div id="footer" class="text-[10px] text-center dark:text-white">
+            ISMAIL JUNDI 2024 &copy;
+        </div>
+    </div>
+    <!-- back to top -->
+    <a href="#body" id="back-to"
+        class="fixed hidden px-3 py-1 text-white bg-black border border-black rounded-lg bottom-4 right-4 hover:text-black hover:bg-white hover:border-black dark:text-black dark:bg-white dark:border-white dark:hover:text-white dark:hover:bg-black dark:hover:border-white">&uarr;</a>
+    <!-- script -->
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
