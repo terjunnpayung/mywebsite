@@ -606,24 +606,12 @@ video {
   right: 1rem;
 }
 
-.right-0{
-  right: 0px;
-}
-
-.top-0{
-  top: 0px;
+.right-5{
+  right: 1.25rem;
 }
 
 .top-5{
   top: 1.25rem;
-}
-
-.top-full{
-  top: 100%;
-}
-
-.right-5{
-  right: 1.25rem;
 }
 
 .mx-auto{
@@ -633,10 +621,6 @@ video {
 
 .mt-4{
   margin-top: 1rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
 }
 
 .flex{
@@ -655,16 +639,16 @@ video {
   height: 1.25rem;
 }
 
-.h-lvh{
-  height: 100lvh;
+.h-6{
+  height: 1.5rem;
 }
 
 .h-full{
   height: 100%;
 }
 
-.h-6{
-  height: 1.5rem;
+.h-lvh{
+  height: 100lvh;
 }
 
 .w-28{
@@ -675,12 +659,12 @@ video {
   width: 1.25rem;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .w-6{
   width: 1.5rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-3xl{
@@ -715,12 +699,12 @@ video {
   gap: 0.25rem;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .overflow-hidden{
@@ -743,10 +727,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-sm{
-  border-radius: 0.125rem;
-}
-
 .border{
   border-width: 1px;
 }
@@ -762,16 +742,6 @@ video {
 .border-black{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-gray-200{
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-t-white{
@@ -826,14 +796,8 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .pb-4{
@@ -842,10 +806,6 @@ video {
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.pb-2{
-  padding-bottom: 0.5rem;
 }
 
 .text-center{
@@ -868,11 +828,6 @@ video {
 
 .text-8xl{
   font-size: 6rem;
-  line-height: 1;
-}
-
-.text-9xl{
-  font-size: 8rem;
   line-height: 1;
 }
 
@@ -954,10 +909,6 @@ video {
 
 .hover\:border:hover{
   border-width: 1px;
-}
-
-.hover\:border-2:hover{
-  border-width: 2px;
 }
 
 .hover\:border-black:hover{
