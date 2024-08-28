@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const audioPlayIcon = document.getElementById('audio-icon-play');
     const audioPauseIcon = document.getElementById('audio-icon-pause');
     const song = document.getElementById('song');
+
+    // song volume
     song.volume = 0.3;
 
     // DARK MODE
@@ -53,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.documentElement.scrollTop = 0;
     })
 
-    // play music
+    // play and pause music
     audioContainer.addEventListener('click', function () {
         if (song.paused) {
             audioPlayIcon.style.display = 'none';
