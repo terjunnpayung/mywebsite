@@ -10,29 +10,30 @@
     <link rel="shortcut icon" href="dist/img/Slime Hejo Favicon.svg" type="image/x-icon">
 </head>
 
-<body class="font-poppins dark:bg-[#0E0E0E]">
+<body class="font-poppins dark:bg-main-color">
     <div id="mainContent" class="container flex flex-col gap-4 p-4 mx-auto md:px-8 md:pt-8 md:pb-4">
         <!-- title -->
         <div class="flex items-center justify-between">
             <div class="flex items-center">
-                <h1 id="welcome" class="font-bold text-8xl dark:text-[#F8F7F4]">Hi</h1>
+                <h1 id="welcome" class="font-bold text-8xl dark:text-sec-color">Hi</h1>
                 <h1 class="text-4xl">👋</h1>
             </div>
             <!-- dark mode toggle -->
             <button id="darkModeToggle"
-                class="px-4 py-2 text-sm text-[#F8F7F4] bg-[#0E0E0E] border border-[#0E0E0E] rounded-lg hover:bg-[#F8F7F4] hover:text-[#0E0E0E] hover:border hover:border-[#0E0E0E] hover:transition-all dark:text-[#0E0E0E] dark:bg-[#F8F7F4] dark:hover:bg-[#0E0E0E] dark:hover:text-[#F8F7F4] dark:hover:border dark:hover:border-[#F8F7F4] dark:border dark:border-[#F8F7F4]">DRK</button>
+                class="px-4 py-2 text-sm border rounded-lg text-sec-color bg-main-color border-main-color hover:bg-sec-color hover:text-main-color hover:border hover:border-main-color hover:transition-all dark:text-main-color dark:bg-sec-color dark:hover:bg-main-color dark:hover:text-sec-color dark:hover:border dark:hover:border-sec-color dark:border dark:border-sec-color">DRK</button>
         </div>
+
         <!-- profile -->
         <div class="flex flex-col flex-wrap gap-4 sm:flex-row lg:flex-row lg:flex-wrap">
             <!-- profile card -->
             <div id="profile"
-                class="bg-[#0E0E0E] border border-[#0E0E0E] rounded-lg p-10 flex flex-col items-center justify-center sm:flex-[1_0_calc(40%-16px)] dark:bg-[#F8F7F4] dark:border dark:border-[#F8F7F4]">
+                class="bg-main-color border border-main-color rounded-lg p-10 flex flex-col items-center justify-center sm:flex-[1_0_calc(40%-16px)] dark:bg-sec-color dark:border dark:border-sec-color">
                 <div class="overflow-hidden rounded-full">
                     <img class="rounded-full aspect-square w-28 hover:scale-[1.75] hover:transition-all hover:translate-y-[2rem]"
                         src="dist/img/FOTO JUNDI.jpg" alt="foto-profil">
                 </div>
-                <p class="pt-4 text-2xl font-semibold text-center text-[#F8F7F4] dark:text-[#0E0E0E]">Ismail Jundi</p>
-                <p class="text-sm font-light text-center text-[#F8F7F4] dark:text-[#0E0E0E]">UI Designer | Front-End
+                <p class="pt-4 text-2xl font-semibold text-center text-sec-color dark:text-main-color">Ismail Jundi</p>
+                <p class="text-sm font-light text-center text-sec-color dark:text-main-color">UI Designer | Front-End
                     Developer
                 </p>
                 <div class="flex gap-4 pt-4">
@@ -52,18 +53,18 @@
             </div>
             <!-- description -->
             <div id="desc"
-                class="border border-[#0E0E0E] rounded-lg p-8 flex flex-col gap-4 items-center justify-center sm:flex-[1_0_calc(60%-16px)] dark:border-[#F8F7F4]">
-                <p class="text-[#0E0E0E] text-lg text-center dark:text-[#F8F7F4]">I am currently a member of</p>
+                class="border border-main-color rounded-lg p-8 flex flex-col gap-4 items-center justify-center sm:flex-[1_0_calc(60%-16px)] dark:border-sec-color">
+                <p class="text-lg text-center text-main-color dark:text-sec-color">I am currently a member of</p>
                 <img class="invert dark:invert-0" src="dist/img/nulisproduktiv-logo.svg" alt="nulisproduktiv-logo">
-                <a class="px-4 py-2 text-sm text-center text-[#F8F7F4] bg-[#0E0E0E] border rounded-lg hover:bg-[#F8F7F4] hover:border-[#0E0E0E] hover:text-[#0E0E0E] hover:transition-all dark:text-[#0E0E0E] dark:bg-[#F8F7F4] dark:hover:bg-[#0E0E0E] dark:hover:border-[#F8F7F4] dark:hover:text-[#F8F7F4]"
+                <a class="px-4 py-2 text-sm text-center border rounded-lg text-sec-color bg-main-color hover:bg-sec-color hover:border-main-color hover:text-main-color hover:transition-all dark:text-main-color dark:bg-sec-color dark:hover:bg-main-color dark:hover:border-sec-color dark:hover:text-sec-color"
                     href="https://instagram.com/nulisproduktiv" target="_blank">Visit
                     #nulisproduktiv &nearrow;</a>
             </div>
             <!-- about me -->
             <div id="aboutMe"
-                class="border border-[#0E0E0E] rounded-lg p-8 flex flex-col gap-4 items-center justify-center sm:flex-[1_0_calc(50%-16px)] dark:border-[#F8F7F4]">
-                <p class="text-2xl font-bold text-[#0E0E0E] dark:text-[#F8F7F4] text-balance">About Me</p>
-                <p class="text-[#0E0E0E] text-base text-center dark:text-[#F8F7F4]">As a passionate UI Designer and
+                class="border border-main-color rounded-lg p-8 flex flex-col gap-4 items-center justify-center sm:flex-[1_0_calc(50%-16px)] dark:border-sec-color">
+                <p class="text-2xl font-bold text-main-color dark:text-sec-color text-balance">About Me</p>
+                <p class="text-base text-center text-main-color dark:text-sec-color">As a passionate UI Designer and
                     Front-End
                     Developer, I
                     am driven to create innovative and engaging digital experiences. I have a proven ability to
@@ -72,39 +73,40 @@
                     functional, responsive web applications. I am eager to contribute my skills to a dynamic team and
                     work on challenging
                     projects.</p>
-                <a class="px-6 py-3 text-sm text-center text-[#F8F7F4] bg-[#0E0E0E] border rounded-lg hover:bg-[#F8F7F4] hover:border-[#0E0E0E] hover:text-[#0E0E0E] hover:transition-all dark:text-[#0E0E0E] dark:bg-[#F8F7F4] dark:hover:bg-[#0E0E0E] dark:hover:border-[#F8F7F4] dark:hover:text-[#F8F7F4]"
+                <a class="px-6 py-3 text-sm text-center border rounded-lg text-sec-color bg-main-color hover:bg-sec-color hover:border-main-color hover:text-main-color hover:transition-all dark:text-main-color dark:bg-sec-color dark:hover:bg-main-color dark:hover:border-sec-color dark:hover:text-sec-color"
                     href="https://drive.google.com/file/d/1kVnp-COCbdNL12nr72zTP2CdizfcMiwu/view?usp=sharing"
                     target="_blank">Download CV &nearr;</a>
             </div>
         </div>
+
         <!-- projects -->
-        <h2 class="mt-4 text-[#0E0E0E] text-2xl font-bold dark:text-[#F8F7F4]">My Projects</h2>
+        <h2 class="mt-4 text-2xl font-bold text-main-color dark:text-sec-color">My Projects</h2>
         <div id="projects" class="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <!-- GPBUS -->
             <div
-                class="border border-[#0E0E0E] rounded-lg p-8 flex flex-col justify-between sm:flex-[1_0_calc(50%-16px)] lg:flex-[1_0_calc(33.3%-16px)] dark:border-[#F8F7F4]">
+                class="border border-main-color rounded-lg p-8 flex flex-col justify-between sm:flex-[1_0_calc(50%-16px)] lg:flex-[1_0_calc(33.3%-16px)] dark:border-sec-color">
                 <div class="flex flex-col pb-4">
-                    <p class="text-[#0E0E0E] text-xl font-bold dark:text-[#F8F7F4]">GPBUS</p>
+                    <p class="text-xl font-bold text-main-color dark:text-sec-color">GPBUS</p>
                     <p class="text-base font-light text-slate-500 dark:text-slate-400">Bus Location and Passenger
                         Monitoring System
                     </p>
                 </div>
                 <div class="flex">
-                    <a class="w-full px-4 py-2 text-sm text-center text-[#F8F7F4] bg-[#0E0E0E] border rounded-lg hover:bg-[#F8F7F4] hover:border-[#0E0E0E] hover:text-[#0E0E0E] hover:transition-all dark:text-[#0E0E0E] dark:bg-[#F8F7F4] dark:hover:bg-[#0E0E0E] dark:hover:border-[#F8F7F4] dark:hover:text-[#F8F7F4]"
+                    <a class="w-full px-4 py-2 text-sm text-center border rounded-lg text-sec-color bg-main-color hover:bg-sec-color hover:border-main-color hover:text-main-color hover:transition-all dark:text-main-color dark:bg-sec-color dark:hover:bg-main-color dark:hover:border-sec-color dark:hover:text-sec-color"
                         href="https://gpbusbandung.web.app/" target="_blank">Visit
                         GPBUS &nearrow;</a>
                 </div>
             </div>
             <!-- NOMADS -->
             <div
-                class="border border-[#0E0E0E] rounded-lg p-8 flex flex-col justify-between sm:flex-[1_0_calc(50%-16px)] lg:flex-[1_0_calc(33.3%-16px)] dark:border-[#F8F7F4]">
+                class="border border-main-color rounded-lg p-8 flex flex-col justify-between sm:flex-[1_0_calc(50%-16px)] lg:flex-[1_0_calc(33.3%-16px)] dark:border-sec-color">
                 <div class="flex flex-col pb-4">
-                    <p class="text-[#0E0E0E] text-xl font-bold dark:text-[#F8F7F4]">NOMADS</p>
+                    <p class="text-xl font-bold text-main-color dark:text-sec-color">NOMADS</p>
                     <p class="text-base font-light text-slate-500 dark:text-slate-400">Travel Agent Website UI Design
                     </p>
                 </div>
                 <div class="flex">
-                    <a class="w-full px-4 py-2 text-sm text-center text-[#F8F7F4] bg-[#0E0E0E] border rounded-lg hover:bg-[#F8F7F4] hover:border-[#0E0E0E] hover:text-[#0E0E0E] hover:transition-all dark:text-[#0E0E0E] dark:bg-[#F8F7F4] dark:hover:bg-[#0E0E0E] dark:hover:border-[#F8F7F4] dark:hover:text-[#F8F7F4]"
+                    <a class="w-full px-4 py-2 text-sm text-center border rounded-lg text-sec-color bg-main-color hover:bg-sec-color hover:border-main-color hover:text-main-color hover:transition-all dark:text-main-color dark:bg-sec-color dark:hover:bg-main-color dark:hover:border-sec-color dark:hover:text-sec-color"
                         href="https://www.figma.com/proto/zJgsY8HW1xleuA7ci6RqoK/BWA-Fullstack-Web-Dev?type=design&node-id=1-2&t=L2G1Nrnl56Anv4wN-8&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A2&hide-ui=1"
                         target="_blank">Visit
                         NOMADS &nearrow;</a>
@@ -112,59 +114,61 @@
             </div>
             <!-- CRYPTOKU -->
             <div
-                class="border border-[#0E0E0E] rounded-lg p-8 flex flex-col justify-between sm:flex-[1_0_calc(50%-16px)] lg:flex-[1_0_calc(33.3%-16px)] dark:border-[#F8F7F4]">
+                class="border border-main-color rounded-lg p-8 flex flex-col justify-between sm:flex-[1_0_calc(50%-16px)] lg:flex-[1_0_calc(33.3%-16px)] dark:border-sec-color">
                 <div class="flex flex-col pb-4">
-                    <p class="text-[#0E0E0E] text-xl font-bold dark:text-[#F8F7F4]">CRYPTOKU</p>
+                    <p class="text-xl font-bold text-main-color dark:text-sec-color">CRYPTOKU</p>
                     <p class="text-base font-light text-slate-500 dark:text-slate-400">Cryptocurrency Website UI Design
                     </p>
                 </div>
                 <div class="flex">
-                    <a class="w-full px-4 py-2 text-sm text-center text-[#F8F7F4] bg-[#0E0E0E] border rounded-lg hover:bg-[#F8F7F4] hover:border-[#0E0E0E] hover:text-[#0E0E0E] hover:transition-all dark:text-[#0E0E0E] dark:bg-[#F8F7F4] dark:hover:bg-[#0E0E0E] dark:hover:border-[#F8F7F4] dark:hover:text-[#F8F7F4]"
+                    <a class="w-full px-4 py-2 text-sm text-center border rounded-lg text-sec-color bg-main-color hover:bg-sec-color hover:border-main-color hover:text-main-color hover:transition-all dark:text-main-color dark:bg-sec-color dark:hover:bg-main-color dark:hover:border-sec-color dark:hover:text-sec-color"
                         href="https://www.figma.com/proto/59KLVGpAMhAG60liTf1nah/UI-UX-Dibimbing-Course?node-id=2-2&starting-point-node-id=2%3A2&hide-ui=1&t=vIwCowOjqEkxQh3r-8"
                         target="_blank">Visit
                         CRYPTOKU &nearrow;</a>
                 </div>
             </div>
         </div>
+
         <!-- contact -->
-        <h2 class="text-[#0E0E0E] mt-4 text-2xl font-bold dark:text-[#F8F7F4]">Contact Me</h2>
+        <h2 class="mt-4 text-2xl font-bold text-main-color dark:text-sec-color">Contact Me</h2>
         <div id="contact" class="flex flex-col">
             <!-- Form -->
             <form id="contactForm" action="https://formspree.io/f/xjkbrewn" method="POST" class="flex flex-col gap-4">
                 <!-- input name -->
                 <div class="flex flex-col gap-1 input-data">
-                    <label class="text-[#0E0E0E] text-lg font-semibold dark:text-[#F8F7F4]" for="fullName">Name</label>
+                    <label class="text-lg font-semibold text-main-color dark:text-sec-color" for="fullName">Name</label>
                     <input type="text" id="fullName" name="fullName" placeholder="Insert Name" required
-                        class="w-full px-4 py-2 text-base border border-[#0E0E0E] rounded-lg dark:bg-[#0E0E0E] dark:border-[#F8F7F4] dark:text-[#F8F7F4] placeholder:text-slate-500">
+                        class="w-full px-4 py-2 text-base border rounded-lg border-main-color dark:bg-main-color dark:border-sec-color dark:text-sec-color placeholder:text-slate-500">
                 </div>
                 <!-- input email -->
                 <div class="flex flex-col gap-1 input-data">
-                    <label class="text-[#0E0E0E] text-lg font-semibold dark:text-[#F8F7F4]" for="email">Email</label>
+                    <label class="text-lg font-semibold text-main-color dark:text-sec-color" for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Insert Email" required
-                        class="w-full px-4 py-2 text-base border border-[#0E0E0E] rounded-lg dark:bg-[#0E0E0E] dark:border-[#F8F7F4] dark:text-[#F8F7F4] placeholder:text-slate-500">
+                        class="w-full px-4 py-2 text-base border rounded-lg border-main-color dark:bg-main-color dark:border-sec-color dark:text-sec-color placeholder:text-slate-500">
                 </div>
                 <!-- input subject -->
                 <div class="flex flex-col gap-1 input-data">
-                    <label class="text-[#0E0E0E] text-lg font-semibold dark:text-[#F8F7F4]"
+                    <label class="text-lg font-semibold text-main-color dark:text-sec-color"
                         for="subject">Subject</label>
                     <input type="text" id="subject" name="subject" placeholder="Insert Subject" required
-                        class="w-full px-4 py-2 text-base border border-[#0E0E0E] rounded-lg dark:bg-[#0E0E0E] dark:border-[#F8F7F4] dark:text-[#F8F7F4] placeholder:text-slate-500">
+                        class="w-full px-4 py-2 text-base border rounded-lg border-main-color dark:bg-main-color dark:border-sec-color dark:text-sec-color placeholder:text-slate-500">
                 </div>
                 <!-- input message -->
                 <div class="flex flex-col gap-1 input-data">
-                    <label class="text-[#0E0E0E] text-lg font-semibold dark:text-[#F8F7F4]"
+                    <label class="text-lg font-semibold text-main-color dark:text-sec-color"
                         for="message">Message</label>
                     <textarea type="text" id="message" name="message" cols="30" rows="5" placeholder="Insert Message"
-                        class="w-full px-4 py-2 text-base border border-[#0E0E0E] rounded-lg resize-none dark:bg-[#0E0E0E] dark:border-[#F8F7F4] dark:text-[#F8F7F4] placeholder:text-slate-500"></textarea>
+                        class="w-full px-4 py-2 text-base border rounded-lg resize-none border-main-color dark:bg-main-color dark:border-sec-color dark:text-sec-color placeholder:text-slate-500"></textarea>
                 </div>
                 <!-- submit button -->
                 <button type="submit"
-                    class="px-4 py-2 text-sm text-center text-[#F8F7F4] bg-[#0E0E0E] border rounded-lg hover:bg-[#F8F7F4] hover:border-[#0E0E0E] hover:text-[#0E0E0E] hover:transition-all dark:text-[#0E0E0E] dark:bg-[#F8F7F4] dark:hover:bg-[#0E0E0E] dark:hover:border-[#F8F7F4] dark:hover:text-[#F8F7F4]">Send</button>
+                    class="px-4 py-2 text-sm text-center border rounded-lg text-sec-color bg-main-color hover:bg-sec-color hover:border-main-color hover:text-main-color hover:transition-all dark:text-main-color dark:bg-sec-color dark:hover:bg-main-color dark:hover:border-sec-color dark:hover:text-sec-color">Send</button>
                 <div
-                    class="w-6 h-6 mx-auto mt-4 ease-linear border-4 border-t-4 border-[#0E0E0E] rounded-full dark:border-[#F8F7F4] border-t-[#F8F7F4] loader dark:border-t-[#0E0E0E]">
+                    class="w-6 h-6 mx-auto mt-4 ease-linear border-4 border-t-4 rounded-full border-main-color dark:border-sec-color border-t-sec-color loader dark:border-t-main-color">
                 </div>
             </form>
         </div>
+
         <!-- spotify -->
         <div id="spotify" class="flex flex-col w-full gap-4 mt-4 md:flex-row md:flex-wrap">
             <iframe class="w-full rounded-lg md:flex-row md:flex-[1_0_calc(50%-16px)]"
@@ -174,14 +178,38 @@
                 src="https://open.spotify.com/embed/playlist/4boGLT97uaCQ11VGCAT2Jq?utm_source=generator"
                 alt="spotify-music-2" width="100%" height="352" loading="lazy"></iframe>
         </div>
+
         <!-- footer -->
-        <div id="footer" class="text-[10px] text-center dark:text-[#F8F7F4]">
+        <div id="footer" class="text-[10px] text-center dark:text-sec-color">
             ISMAIL JUNDI 2024 &copy;
         </div>
     </div>
+
     <!-- back to top -->
-    <a href="#mainContent" id="back-to"
-        class="fixed hidden px-3 py-1 text-[#F8F7F4] bg-[#0E0E0E] border border-[#0E0E0E] rounded-lg bottom-4 right-4 hover:text-[#0E0E0E] hover:bg-[#F8F7F4] hover:border-[#0E0E0E] dark:text-[#0E0E0E] dark:bg-[#F8F7F4] dark:border-[#F8F7F4] dark:hover:text-[#F8F7F4] dark:hover:bg-[#0E0E0E] dark:hover:border-[#F8F7F4]">&uarr;</a>
+    <svg id="back-to" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+        class="fixed w-10 h-10 border-2 rounded-full cursor-pointer size-6 border-main-color bottom-4 right-4 bg-sec-color dark:border-sec-color dark:bg-main-color dark:fill-sec-color">
+        <path fill-rule="evenodd"
+            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm.53 5.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v5.69a.75.75 0 0 0 1.5 0v-5.69l1.72 1.72a.75.75 0 1 0 1.06-1.06l-3-3Z"
+            clip-rule="evenodd" />
+    </svg>
+
+    <!-- audio input -->
+    <div class="hidden" id="audio-container">
+        <audio id="song" src="./dist/audio/You re Mine (Instrumental).mp3" loop autoplay></audio>
+        <svg id="audio-icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="fixed flex items-center justify-center w-10 h-10 border-2 rounded-full cursor-pointer size-6 border-main-color bottom-4 left-4 bg-sec-color animate-rotating dark:border-sec-color dark:bg-main-color dark:fill-sec-color">
+            <path fill-rule="evenodd"
+                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+                clip-rule="evenodd" />
+        </svg>
+        <svg id="audio-icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="fixed flex items-center justify-center w-10 h-10 border-2 rounded-full cursor-pointer size-6 border-main-color bottom-4 left-4 bg-sec-color animate-rotating dark:border-sec-color dark:bg-main-color dark:fill-sec-color">
+            <path fill-rule="evenodd"
+                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM9 8.25a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h.75a.75.75 0 0 0 .75-.75V9a.75.75 0 0 0-.75-.75H9Zm5.25 0a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75H15a.75.75 0 0 0 .75-.75V9a.75.75 0 0 0-.75-.75h-.75Z"
+                clip-rule="evenodd" />
+        </svg>
+    </div>
+
     <!-- script -->
     <script src="app.js"></script>
     <script src="script.js"></script>
