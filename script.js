@@ -1,10 +1,8 @@
 const contactForm = document.getElementById('contactForm');
-const loader = document.querySelector('.loader');
-
-loader.style.display = "none";
+const loader = document.getElementById('loader');
 
 contactForm.addEventListener("submit", function (e) {
-    loader.style.display = "block";
+    loader.classList.toggle("hidden");
     e.preventDefault();
 
     const url = e.target.action;
@@ -15,7 +13,7 @@ contactForm.addEventListener("submit", function (e) {
         body: formData,
         mode: "no-cors",
     }).then(() => {
-        loader.style.display = "none";
+        loader.classList.toggle("hidden");
         window.location.href = "/thankyou.html";
     }).catch((e) => alert('error'))
 })

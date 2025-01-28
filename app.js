@@ -4,13 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const html = document.documentElement;
     const darkModeToggle = document.getElementById('darkModeToggle');
     const backButton = document.getElementById('back-to');
-    const audioContainer = document.getElementById('audio-container');
-    const audioPlayIcon = document.getElementById('audio-icon-play');
-    const audioPauseIcon = document.getElementById('audio-icon-pause');
-    const song = document.getElementById('song');
-
-    // song volume
-    song.volume = 0.3;
 
     // DARK MODE
     darkModeToggle.addEventListener('click', function () {
@@ -44,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             backTo.style.display = 'block';
-            audioContainer.style.display = 'block';
         } else {
             backTo.style.display = 'none';
         }
@@ -53,18 +45,5 @@ document.addEventListener('DOMContentLoaded', function () {
     backButton.addEventListener('click', function () {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-    })
-
-    // play and pause music
-    audioContainer.addEventListener('click', function () {
-        if (song.paused) {
-            audioPlayIcon.style.display = 'none';
-            audioPauseIcon.style.display = 'flex';
-            song.play();
-        } else {
-            audioPauseIcon.style.display = 'none';
-            audioPlayIcon.style.display = 'flex';
-            song.pause();
-        }
     })
 })

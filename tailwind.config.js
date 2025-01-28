@@ -10,7 +10,7 @@ module.exports = {
         poppins: ['Poppins']
       },
       animation: {
-        'rotating': 'rotating 4s linear infinite'
+        'rotating': 'rotating 5s linear infinite'
       },
       keyframes: {
         rotating: {
