@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
     <link rel="stylesheet" href="dist/output.css">
-    <link rel="shortcut icon" href="dist/img/Slime Hejo Favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="dist/img/Slime Pink.png" type="image/x-icon">
 </head>
 
-<body class="font-poppins dark:bg-black h-lvh">
-    <div class="container flex flex-col items-center justify-center h-full mx-auto">
+<body class="font-poppins dark:bg-black">
+    <!-- main content -->
+    <div class="container flex flex-col items-center justify-center px-4 py-2 h-dvh">
+        <!-- darkModeToogle -->
         <button id="darkModeToggle"
-            class="absolute px-4 py-2 text-sm text-white bg-black border border-black rounded-lg right-5 top-5 hover:bg-white hover:text-black hover:border hover:border-black hover:transition-all dark:text-black dark:bg-white dark:hover:bg-black dark:hover:text-white dark:hover:border dark:hover:border-white dark:border dark:border-white">DRK</button>
-        <div class="flex items-center gap-2 pb-2">
-            <h1 class="text-4xl font-bold dark:text-white">Thank You For Contacting Me</h1>
-            <p class="text-2xl">😊</p>
+            class="absolute px-4 py-2 text-sm duration-300 border rounded-lg top-5 right-5 text-sec-color bg-main-color border-main-color hover:bg-transparent hover:text-main-color hover:border hover:border-main-color hover:duration-300 dark:text-main-color dark:bg-sec-color dark:hover:bg-transparent dark:hover:text-sec-color dark:hover:border dark:hover:border-sec-color dark:border dark:border-sec-color">DRK</button>
+        <!-- thank you words -->
+        <div class="flex flex-col items-center gap-2 text-center">
+            <h1 class="text-4xl font-bold text-main-color dark:text-sec-color ">Thank You For Contacting Me</h1>
+            <p class="pb-2 text-base font-light text-main-color dark:text-sec-color">Please check your email in 24 hours
+                i will send you a reply as soon as possible, thanks.</p>
+            <!-- go back button -->
+            <a href="index.html"
+                class="px-4 py-2 text-base font-medium duration-300 border rounded-lg text-sec-color bg-main-color border-main-color hover:bg-transparent hover:text-main-color hover:border hover:border-main-color hover:duration-300 dark:text-main-color dark:bg-sec-color dark:hover:bg-transparent dark:hover:text-sec-color dark:hover:border dark:hover:border-sec-color dark:border dark:border-sec-color">Go
+                Back</a>
         </div>
-        <p class="pb-4 text-base font-light dark:text-white">Please check your email in 24 hours i will send you a reply
-            as soon as
-            possible,
-            thanks.</p>
-        <a href="index.html"
-            class="px-4 py-2 text-white bg-black border border-black rounded-lg hover:bg-white hover:text-black hover:border hover:border-black hover:transition-all dark:text-black dark:bg-white dark:hover:bg-black dark:hover:text-white dark:hover:border dark:hover:border-white dark:border dark:border-white">Go
-            Back</a>
     </div>
+
+    <!-- blob -->
+    <div id="blob"
+        class="hidden dark:block fixed w-[50%] h-[40%] bg-gradient-to-r from-cyan-500 to-yellow-500 -z-20 -left-20 top-0 rounded-full animate-rotating blur-[100px] md:blur-[160px] lg:blur-[200px]">
+    </div>
+    <div id="blob"
+        class="hidden dark:block fixed w-[40%] h-[50%] bg-gradient-to-r from-pink-500 via-yellow-500 to-green-500 -z-20 -right-20 bottom-0 rounded-full animate-rotating blur-[100px] md:blur-[160px] lg:blur-[200px]">
+    </div>
+
+    <!-- script -->
     <script src="app.js"></script>
 </body>
 

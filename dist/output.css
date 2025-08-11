@@ -715,6 +715,30 @@ video {
   height: 100lvh;
 }
 
+.h-\[1dvh\]{
+  height: 1dvh;
+}
+
+.h-\[1vh\]{
+  height: 1vh;
+}
+
+.h-\[vh\]{
+  height: vh;
+}
+
+.h-\[lvh\]{
+  height: lvh;
+}
+
+.h-\[100dvh\]{
+  height: 100dvh;
+}
+
+.h-dvh{
+  height: 100dvh;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -794,43 +818,6 @@ video {
   animation: wiggle 1s linear infinite;
 }
 
-@keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping{
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-@keyframes pulse{
-  50%{
-    opacity: .5;
-  }
-}
-
-.animate-pulse{
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes bounce{
-  0%, 100%{
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce{
-  animation: bounce 1s infinite;
-}
-
 .cursor-pointer{
   cursor: pointer;
 }
@@ -861,10 +848,6 @@ video {
 
 .gap-0{
   gap: 0px;
-}
-
-.gap-1{
-  gap: 0.25rem;
 }
 
 .gap-1\.5{
@@ -1283,6 +1266,11 @@ video {
 .dark\:border-white:is(.dark *){
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.dark\:border-red-500:is(.dark *){
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .dark\:border-t-transparent:is(.dark *){
