@@ -48,6 +48,7 @@
     --font-poppins: "Poppins";
     --color-main-color: #0E0E0E;
     --color-sec-color: #F8F7F4;
+    --animate-rotating: rotating 10s ease-in-out infinite;
   }
 }
 @layer base {
@@ -338,6 +339,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-rotating {
+    animation: var(--animate-rotating);
   }
   .animate-spin {
     animation: var(--animate-spin);
@@ -1189,6 +1193,11 @@
   initial-value: 0 0 #0000;
 }
 @keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
   to {
     transform: rotate(360deg);
   }

@@ -10,5 +10,11 @@
     --color-main-color: #0E0E0E;
     --color-sec-color: #F8F7F4;
 
+    --animate-rotating: rotating 10s ease-in-out infinite;
 
+    @keyframes rotating {
+        to {
+            transform: rotate(360deg);
+        }
+    }
 }
