@@ -40,6 +40,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-spin: spin 1s linear infinite;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -48,6 +49,8 @@
     --font-poppins: "Poppins";
     --color-main-color: #0E0E0E;
     --color-sec-color: #F8F7F4;
+    --color-acc-main-color: #D397FA;
+    --color-acc-sec-color: #8364E8;
     --animate-rotating: rotating 10s ease-in-out infinite;
   }
 }
@@ -666,10 +669,10 @@
       }
     }
   }
-  .hover\:fill-sky-400 {
+  .hover\:fill-acc-main-color {
     &:hover {
       @media (hover: hover) {
-        fill: var(--color-sky-400);
+        fill: var(--color-acc-main-color);
       }
     }
   }
@@ -936,6 +939,15 @@
       &:hover {
         @media (hover: hover) {
           background-color: transparent;
+        }
+      }
+    }
+  }
+  .dark\:hover\:fill-acc-sec-color {
+    &:where(.dark, .dark *) {
+      &:hover {
+        @media (hover: hover) {
+          fill: var(--color-acc-sec-color);
         }
       }
     }
